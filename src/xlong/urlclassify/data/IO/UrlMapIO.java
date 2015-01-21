@@ -8,11 +8,10 @@ import java.util.TreeSet;
 import java.util.Map.Entry;
 
 import xlong.util.MyWriter;
-import xlong.util.PropertiesUtil;
 
 public class UrlMapIO {
-	private static final String mySpliter = PropertiesUtil.getProperty("mySpliter");
-	private static final String mySpliterReg = PropertiesUtil.getProperty("mySpliterReg");
+	private static final String mySpliter = " |-| ";
+	private static final String mySpliterReg = " \\|-\\| ";
 	
 	public static HashMap<String, TreeSet<String>> read(String filePath) throws IOException {
 		HashMap<String, TreeSet<String>> urlMap = new HashMap<String, TreeSet<String>>();
